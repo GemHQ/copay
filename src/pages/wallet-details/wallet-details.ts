@@ -36,6 +36,12 @@ import { WalletBalancePage } from './wallet-balance/wallet-balance';
 
 const HISTORY_SHOW_LIMIT = 10;
 
+declare global {
+  interface Window {
+    Gem: any;
+  }
+}
+
 @Component({
   selector: 'page-wallet-details',
   templateUrl: 'wallet-details.html'
@@ -244,6 +250,10 @@ export class WalletDetailsPage extends WalletTabsChild {
       leading: true
     }
   );
+
+  public openTransfer(wallet: string) {
+    window.Gem.Transfer.open(wallet);
+  }
 
   public toggleBalance() {
     this.profileProvider.toggleHideBalanceFlag(
