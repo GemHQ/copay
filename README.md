@@ -5,7 +5,7 @@
 
 #### Parameters
 
-1. **data-redirect** should point to the server running the Copay web UI for redirect upon successful Gem widget flow or close.
+1. **data-redirect** should point to the server running the Copay web UI for redirect upon successful Gem widget flow or close. Copay default port is 8100
 
 - i.e. http://copay.gem.co/
 
@@ -62,6 +62,7 @@ Ensure you have [Node](https://nodejs.org/) installed, then install and start Co
 
 ```sh
 npm install
+npm audit fix
 npm run apply:copay
 npm run start
 ```
