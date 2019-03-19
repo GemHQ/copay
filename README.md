@@ -1,3 +1,18 @@
+## Gem Snippet Configuration
+
+> **NOTE** Snippet can be found and configured at the bottom of **app-template/index-template.html** at build time or
+> **src/index.html** at runtime.
+
+#### Parameters
+
+1. **data-redirect** should point to the server running the Copay web UI for redirect upon successful Gem widget flow or close.
+
+- i.e. http://copay.gem.co/
+
+2. **src** should point to the hosted GemInit.js file
+
+- i.e. http://cdn.gem.co/GemInit.js
+
 <img src="https://raw.githubusercontent.com/bitpay/copay/master/resources/copay/windows/icon/Wide310x150Logo.scale-100.png" alt="Copay">
 
 [![CircleCI](https://img.shields.io/circleci/project/github/bitpay/copay/master.svg)](https://circleci.com/gh/bitpay/copay/)
